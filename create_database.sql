@@ -1,0 +1,1 @@
+CREATE DATABASE file_upload;

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Successful</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">File Uploaded Successfully!</h1>
+        
+        <p>Your file is now available at the following URL:</p>
+        
+        <div class="file-url">
+            <a href="{{ file_url }}">{{ file_url }}</a>
+        </div>
+        
+        <p> Anyone with this URL and the password will be able to download your file.</p>
+        
+        <a href="{{ url_for('index') }}" class="button">Upload Another File</a>
+    </div>
+</body>
+</html>

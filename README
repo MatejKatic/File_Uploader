@@ -1,0 +1,5 @@
+Database Setup:
+1. First create the database:
+   psql -U postgres -f create_database.sql
+2. Then set up the schema:
+   psql -U postgres -d file_upload -f setup.sql
